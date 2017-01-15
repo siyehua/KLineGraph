@@ -1,7 +1,8 @@
 #股票图,K线图,蜡烛图,高仿雪球股票,教你一步步实现股票图
 
 点击播放效果图
-[![效果图](/img/_001.jpg)](http://v.youku.com/v_show/id_XMjQxMzAwMjkzMg==.html?spm=a2h0k.8191407.0.0.7SyXhZ&from=s1.8-1-1.2)
+
+[<img src="/img/_004.jpg" height="40%" width="40%" />](http://v.youku.com/v_show/id_XMjQxMzAwMjkzMg==.html?spm=a2h0k.8191407.0.0.7SyXhZ&from=s1.8-1-1.2)
 
 讲K线图之前,先来一个引言.
 

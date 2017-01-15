@@ -2,9 +2,7 @@
 
 
 
-<img src="/img/_005.gif" height="40%" width="40%" />
-
-<img src="/img/_006.gif" height="40%" width="40%" />
+<img src="/img/_005.gif" height="40%" width="40%" /><img src="/img/_006.gif" height="40%" width="40%" />
 
 
 讲K线图之前,先来一个引言.

@@ -1,8 +1,11 @@
 #股票图,K线图,蜡烛图,高仿雪球股票,教你一步步实现股票图
 
-点击播放效果图
 
-[<img src="/img/_004.jpg" height="40%" width="40%" />](http://v.youku.com/v_show/id_XMjQxMzAwMjkzMg==.html?spm=a2h0k.8191407.0.0.7SyXhZ&from=s1.8-1-1.2)
+
+<img src="/img/_005.gif" height="40%" width="40%" />
+
+<img src="/img/_006.gif" height="40%" width="40%" />
+
 
 讲K线图之前,先来一个引言.
 
@@ -928,7 +931,7 @@ private void drawCandles(Canvas canvas, int viewWidth, int viewHeight, float ite
 ####绘制其他元素
 雪球股票的蜡烛图,还有三条折线,以及左上角的文字提示.这些在分时图已经讲解了如何绘制了,只需要依样画葫芦即可.
 
-因为蜡烛图的复杂不在于它的绘制,而在于它的触摸反馈,所以这里把更多的经历花在触摸反馈的处理上.
+因为蜡烛图的复杂不在于它的绘制,而在于它的触摸反馈,所以这里把更多的精力花在触摸反馈的处理上.
 
 
 ###触摸
@@ -1137,13 +1140,13 @@ public boolean onTouchEvent(MotionEvent event) {
 本文从布局,绘制,触摸,三个方面讲解了分时图,蜡烛图的一步步实现过程.其实股票图的业务上还有很多是没有讲解到的,例如大家应该都有注意到截图中
 下面有柱状图,其实这个应该也是图的一部分,还有一些高亮显示等问题.
 
-但其实基本的原理都是不变的,一个View的三个方法都有详细的讲解到,涉及到更多业务,无非也就是在这个基础上,绘制自己业务想要的效果,万变不离其宗,只要掌握好方法,再复杂的图也信手捏来.
+但其实基本的原理都是不变的,一个View的三个方面都有详细的讲解到,涉及到更多业务逻辑,无非也就是在这个基础上,绘制自己业务想要的效果,万变不离其宗,只要掌握好方法,再复杂的图也信手捏来.
 
 之所以要画这两个图,是因为之前有人问博主有没有别人写好的能直接用的股票图,搜了好久没发现有比较成熟的Android股票图绘制,有的都必须在项目的基础上改造,而且BUG也比较多
 
 最后在CSDN看了一个教程[一步一步教你写股票走势图](http://blog.csdn.net/qqyanjiang/article/details/51442120),
 这个教程的绘制是依赖另外一库的基础上改造的,而且也不是很成熟.作者花了大量的篇幅,主要问题并不是教大家如何绘制,而是教大家如何处理绘制股票图中遇到的一些问题,
-例如数组越界了等一些实质性的问题,最后还把这个系列商用了.
+例如数组越界了等一些实质性的问题,最后还把这个系列商用了.如果大家在股票图的应用中遇到了一下问题,也可以参考这个系列的教程
 
 就目前来讲,Android暂时还没有一个较为成熟的股票图项目可以依赖,而使用半成熟的项目,本身就会遇到许多bug,与其花精力去修改别人的bug,不如自己编写一个.
 
@@ -1152,7 +1155,7 @@ public boolean onTouchEvent(MotionEvent event) {
 
 #License
 ```
-Copyright 2017 siyehua
+Copyright 2016 siyehua
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

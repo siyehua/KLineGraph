@@ -1,5 +1,8 @@
 #股票图,K线图,蜡烛图,高仿雪球股票,教你一步步实现股票图
 
+点击播放效果图
+[![效果图](/img/_001.jpg)](http://v.youku.com/v_show/id_XMjQxMzAwMjkzMg==.html?spm=a2h0k.8191407.0.0.7SyXhZ&from=s1.8-1-1.2)
+
 讲K线图之前,先来一个引言.
 
 前两天听了[朱凯](https://www.zhihu.com/people/rengwuxian/answers)大神的知乎live,其中说到一点,作为Android开发者需要立即提升的三项技能:
@@ -349,7 +352,7 @@ private void drawBrokenLine(Canvas canvas, int viewWidth, float item, String col
 
    凯哥live中说到,<b>设计或者产品出来一个交互,一个需求,你做不到,没什么关系,因为别人也做不到.但是假设别人做不到,但是你做到了,那么很明显,你就强于别人</b>
 
-   在第3步的时候,我的这篇文章[StyleTextView](https://github.com/siyehua/StyleTextView),发布到郭霖的公众号后,有部分同学说,为什么这么麻烦搞这么多,感觉不需要这么复杂.
+   在前面绘制文字的时候提到过我的这篇文章[StyleTextView](https://github.com/siyehua/StyleTextView),发布到郭霖的公众号后,有部分同学说,为什么这么麻烦搞这么多,感觉不需要这么复杂.
    实际上如果只是单纯做一个需求,确实不需要多复杂的代码,直接绘制是最简单的,但是绘制也涉及到留白的问题,在一个要求不是特别精确的View,一两个像素的差距,确实可有可无,甚至有同学直接根据
    实际运行出来的效果图,调整空白大小.
 

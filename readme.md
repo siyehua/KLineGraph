@@ -165,6 +165,8 @@ private void createTestData() {
 }
 ```
 
+
+
 2. 绘制线.使用MarkMan量取,分时图在720*1280分辨率下,高度是是410,则我们可以把其高度分成410份.
    它一共有5条横线,从上到下,每条线距离顶部的距离依次为:10,30,190,360,380.其中第3条为虚线.还有一条竖线,水平居中.
 
@@ -412,7 +414,7 @@ private void drawPriceAndPercent(Canvas canvas, int viewWidth, float item) {
 
 至此,绘制基本已经结束了,直接运行,就能看到一个基本K线图,但是还差K线图的交互,也就是长按K线图的交互,这其实就是一个触摸反馈的过程
 
-<img src="/img/_003.jpg" height="100%" width="100%" />
+<img src="/img/_003.jpg" height="50%" width="50%" />
 
 
 ###触摸

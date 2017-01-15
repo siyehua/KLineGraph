@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.siyehua.klinegraph.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:textSize="12sp"
+        tools:text="10:39"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        tools:text="3100.84"/>
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:textSize="12sp"
+        tools:text="1.23%"/>
+
+    <com.siyehua.klinegraph.KLineView
+        android:id="@+id/v_content"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_below="@id/tv_time"
+        android:scaleType="matrix"
+        />
+
+    <com.siyehua.klinegraph.CandleView
+        android:id="@+id/c_content"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_below="@id/v_content"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

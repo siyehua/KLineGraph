@@ -235,7 +235,7 @@ private void drawDashEffect(Canvas canvas, float x, float y, float endX, float e
 
    需要注意的是,绘制文字的x,y坐标,x=文字的左边,y=文字的baseline,文字的baseline默认等于-mPaint.getFontMetrics().top
 
-   想了解更多关于文字绘制的细节,请移步到我这篇文章(StyleTextView)[https://github.com/siyehua/StyleTextView]
+   想了解更多关于文字绘制的细节,请移步到我这篇文章[StyleTextView](https://github.com/siyehua/StyleTextView)
 
 ```java
 @Override
@@ -349,9 +349,11 @@ private void drawBrokenLine(Canvas canvas, int viewWidth, float item, String col
 
    凯哥live中说到,<b>设计或者产品出来一个交互,一个需求,你做不到,没什么关系,因为别人也做不到.但是假设别人做不到,但是你做到了,那么很明显,你就强于别人</b>
 
-   在第3步的时候,我的这篇文章(StyleTextView)[https://github.com/siyehua/StyleTextView],发布到郭霖的公众号后,有部分同学说,为什么这么麻烦搞这么多,感觉不需要这么复杂.
-   实际上却是不需要多复杂的代码,直接绘制是最简单的,但是绘制也涉及到留白的问题,在一个要求不是特别精确的View,一两个像素的差距,确实可有可无,甚至有同学直接根据
-   实际运行出来的效果图,调整空白大小.但是你为什么调整空白大小,为什么要这么调,调了以后其他的机型适配吗?如果在一个很大的View上,字体大小很大,此时能保证也能满足正常视觉吗?
+   在第3步的时候,我的这篇文章[StyleTextView](https://github.com/siyehua/StyleTextView),发布到郭霖的公众号后,有部分同学说,为什么这么麻烦搞这么多,感觉不需要这么复杂.
+   实际上如果只是单纯做一个需求,确实不需要多复杂的代码,直接绘制是最简单的,但是绘制也涉及到留白的问题,在一个要求不是特别精确的View,一两个像素的差距,确实可有可无,甚至有同学直接根据
+   实际运行出来的效果图,调整空白大小.
+
+   但是你为什么调整空白大小,为什么要这么调,调了以后其他的机型适配吗?如果在一个很大的View上,字体大小很大,此时能保证也能满足正常视觉吗?
 
    故有时候追求一些细节,对自己的代码,以及技术,都是一种负责任的态度.
 
@@ -424,8 +426,10 @@ private void drawPriceAndPercent(Canvas canvas, int viewWidth, float item) {
 
 
 ###触摸
-网上有很多的触摸文章教程,我这里就不展开篇幅讲解了,这里直接使用手势识别类:GestureDetector,但是实际使用发现,假设手指长按了,就不能再接收到
-手指的移动事件,看GestureDetector发现,如果它判断是长按就直接break了,同时发现它也没有发送手指离开屏幕的时间,这都不是我想要的,所以我就把它源码直接复制出来了,删掉了一些用不到的事件,并
+网上有很多的触摸文章教程,我这里就不展开篇幅讲解了,这里直接使用手势识别类:GestureDetector
+
+但是实际使用发现,假设手指长按了,就不能再接收到
+手指的移动事件,看GestureDetector发现,如果它判断是长按就直接break了,同时发现它也没有发送手指离开屏幕的事件,这都不是我想要的,所以我就把它源码直接复制出来了,删掉了一些用不到的事件,并
 添加了手指离开事件.第二个手指按下,离开事件.
 
 ```java
@@ -433,7 +437,7 @@ boolean onDown2(MotionEvent e);
 boolean onUp2(MotionEvent e);
 boolean onUp(MotionEvent e);
 ```
-更多详情,请点击这个改造过的(GestureDetector)[/app/src/main/java/com/siyehua/klinegraph/GestureDetector.java]
+更多详情,请点击这个改造过的[GestureDetector](/app/src/main/java/com/siyehua/klinegraph/GestureDetector.java)
 
 
 添加手势触摸监听,首先在init初始化GestureDetector,并在onTouch中拦截触摸事件
@@ -598,3 +602,4 @@ private void drawTouchLines(Canvas canvas, int viewWidth, float item) {
 
 ###分时图总结
 至此,分时图的布局,绘制,触摸反馈都已经完整,如果再加上设置数据的方法,就可以作为一个基本的分时图使用了.
+详细代码请点击:[KLineView](/app/src/main/java/com/siyehua/klinegraph/KLineView.java)

@@ -48,8 +48,9 @@
 
 颜色红,代表收盘后,相对于昨天,涨了,颜色绿,则表示跌了.
 
+三条折线分别代表了MA线,MA是“移动平均线”的简称，后面的数字：5、10、20.....是时间周期。MA5即5天收盘股票的平均点,其他的类推.博主这个例子没有实现MA线,作为大家的补充练手
 
-<b>下面就分时图,蜡烛图,分别讲解其布局,绘制,已经触摸反馈</b>
+<b>下面就分时图,蜡烛图,分别讲解其布局,绘制,触摸反馈</b>
 
 
 ##分时图
@@ -1153,7 +1154,7 @@ public boolean onTouchEvent(MotionEvent event) {
 
 #License
 ```
-Copyright 2016 siyehua
+Copyright 2017 siyehua
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
